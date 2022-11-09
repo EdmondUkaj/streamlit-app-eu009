@@ -12,7 +12,7 @@ from pathlib import Path
 home_path = str(Path.home())
 
 # Data import (you may need to change the path)
-df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
+df = pd.read_csv('https://raw.githubusercontent.com/kirenz/datasets/master/oecd.csv')
 
 
 ###-------------------###
@@ -22,13 +22,13 @@ df = pd.read_csv(home_path + "/streamlit-app/data/oecd.csv")
 # HEADER
 
 # Title of our app
-st.title("My first App")
+st.title("Juhu meine erste App")
 
 # Add image
 st.image('hdm-logo.jpg')
 
 # Add header
-st.header("My header")
+st.header("dein Header")
 
 #-------------------#
 # SIDEBAR
@@ -37,7 +37,7 @@ st.header("My header")
 st.sidebar.header("This is my sidebar")
 
 # Make a slider
-satisfaction = st.sidebar.slider('What is your life satisfaction?', 0, 10, 1)
+satisfaction = st.sidebar.slider('I CANT GET NO...Satisfation', 0, 10, 1)
 
 # Show output of slider selection
 st.sidebar.write("My life satisfaction is around ", satisfaction, 'points')
